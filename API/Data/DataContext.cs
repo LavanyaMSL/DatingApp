@@ -3,9 +3,9 @@ using API.Entitites;
 
 namespace API.Data
 {
-    public class DataContext: DbContext
+    public class IuserRepository: DbContext
     {
-     public DataContext(DbContextOptions options):base(options)
+     public IuserRepository(DbContextOptions options):base(options)
      {
 
      }  

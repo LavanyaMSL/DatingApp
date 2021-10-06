@@ -11,9 +11,9 @@ namespace API.Controllers
 {
     public class BuggyController:BaseApiController
     {
-        private readonly DataContext _context;
+        private readonly IuserRepository _context;
 
-        public BuggyController( DataContext context)
+        public BuggyController( IuserRepository context)
         {
           _context=context;
         }
