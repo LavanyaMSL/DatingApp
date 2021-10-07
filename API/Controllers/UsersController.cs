@@ -34,13 +34,13 @@ namespace API.Controllers
            return Ok(await _userRepository.GetMembersAsync());
         }
 
-        [Authorize]
-        [HttpGet("{id}")]
-        public async Task<ActionResult<MemberDto>> GetUser(int id)
-        {
-            var user= await _userRepository.GetUserByIdAsync(id);
-            return _mapper.Map<MemberDto>(user);
-        }
+        // [Authorize]
+        // [HttpGet("{id}")]
+        // public async Task<ActionResult<MemberDto>> GetUser(int id)
+        // {
+        //     var user= await _userRepository.GetUserByIdAsync(id);
+        //     return _mapper.Map<MemberDto>(user);
+        // }
 
         
         [HttpGet("{username}")]
